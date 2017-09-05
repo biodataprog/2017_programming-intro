@@ -17,3 +17,4 @@ basic information to examine data in R.
 ---
 Coursework material [LICENSE](LICENSE)
 
+jason.stajich[AT]ucr.edu -- http://lab.stajich.org/
