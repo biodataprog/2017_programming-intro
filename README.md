@@ -12,7 +12,7 @@ The bioinformatics tools for data analyses will include short read
 sequence data analyses and alignments, SNP identification, BLAST and
 basic information to examine data in R.
 
-[Course Syllabus and Lectures](index.html)
+[Course Syllabus and Lectures](https://biodataprog.github.io/programming-intro/index.html)
 
 ---
 Coursework material [LICENSE](LICENSE)
