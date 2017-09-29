@@ -35,9 +35,10 @@
       * Running applications
 
       ---
+      class: left
       # Shell - Command Line Interface (CLI)
 
-      .right[![NmapScreen](img/trinity-nmapscreen-hd-crop-web.jpg)]
+      .right[![NmapScreen](img/TheMatrix_Trinity_nmapscreen.jpg)]
       
       * Interactive interface of UNIX operating system (Linux and OSX are a
       type of UNIX) 
@@ -45,41 +46,43 @@
       * Access to this in the Terminal, or iTerm on OSX (since BSD-UNIX is
       under the hood)
 
-      * Windows does not have a UNIX, but applications like Cygwin
-      provide this. Windows10 does have a bash shell.
+      * Windows: Use [Cygwin](https://www.cygwin.com/). Windows10 does have a [BASH shell](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10).
       
       * The Shell is the commandline program. There are several types,
-
-        **  `sh` - Bourne shell, `bash` - Bourne again shell, `csh` - C
-      shell, `zsh` - Z shell.
+        * `sh` - Bourne shell
+        * `bash` - Bourne again shell
+        * `csh` - C shell
       
+      ---
+      # Anatomy of a command line
+
+      ```shell
+      /Users/me $ ls
+      /Users/me $ date
+      /Users/me $ ping www.ucr.edu
+      /Users/me $ echo "hello there"
+      /Users/me $ python test.py
+      /Users/me $ python cmdline.py -i input -o out -d db
+      ```
 
       ---
       # Using CLI
 
       * Programs are run from the shell to interact with the
         filesystem, naviagate folders, read files
-      * launch programs from file editors
-      * 
-
-      ---
-      # Anatomy of a command line
-
-      ```bash
-      /Users/me $ ls
-      /Users/me $ date
-      /Users/me $ ping www.ucr.edu
-      ```
+      * launch programs like file editors, 
       
       ---
       # Reminders
 
-      ![HoneyBadger](img/honeybadger.jpg)
+      .right[![HoneyBadger](img/honeybadger.jpg)]
       
       * Case MaTTerS
       * File Extensions (e.g. .txt .doc .docx) don't matter
+      * Avoid spaces in filenames
+      * Files starting with '.' are hidden by default
 
-            ---
+      ---
       # Directories and listing
 
       1. ls - shows a listing of the files and folders
@@ -91,10 +94,13 @@
       4. ls -F will give a different symbol for directories
       5. ls -l shows long listing
       6. ls -lt shows long listing, ordered by newest to oldest
-      
+      7. ls -a shows hidden files
       7. How to know all the options?
+
+      ---
+      # Use `man` to find out more about a program
       
-      ```bash
+      ```shell
       $ man ls
       NAME
       ls -- list directory contents
@@ -140,7 +146,7 @@
       4. On the Mac you can see the same directories and files
       organized graphically too
       
-      5. SWCarpentry has a nice intro with graphics [here](https://swcarpentry.github.io/shell-novice/01-filedir.html)
+      5. SWCarpentry has a nice intro with graphics [here](https://swcarpentry.github.io/shell-novice/02-filedir/)
       
       ![Figure](img/filesystem.svg)
       
@@ -221,7 +227,7 @@
       
       ---
       # Other resources
-      1. [Introduction to UNIX Shell - Software Carpentry](http://swcarpentry.github.io/shell-novice/)
+      1. [Introduction to UNIX Shell - Software Carpentry](https://swcarpentry.github.io/shell-novice/)
       
     </textarea>
     <script src="js/remark.js" type="text/javascript">
