@@ -1,4 +1,4 @@
-MARKDOWN=pandoc --from markdown --standalone --indented-code-classes=perl
+MARKDOWN=pandoc --from markdown --standalone --indented-code-classes=python
 
 all: htmlall pdfall
 
@@ -6,10 +6,8 @@ pdfall: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
 htmlall: $(patsubst %.md,%.html,$(wildcard *.md)) 
 
-
-
 %.html: %.md
-	$(MARKDOWN) $< --to html5 --output $@
+	$(MARKDOWN) $< --to html5 --output $@ metadata.yaml
 
 %.pdf: %.md
-	$(MARKDOWN) $< --to latex --output $@
+	$(MARKDOWN) $< --to latex --output $@ metadata.yaml
