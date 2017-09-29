@@ -30,16 +30,198 @@
       ---
       # UNIX Command line
 
-      * The command line shell
+      * The UNIX Shell: command line interface
       * Navigating Directories and Files
       * Running applications
+
+      ---
+      # Shell - Command Line Interface (CLI)
+
+      ![NmapScreen](img/trinity-nmapscreen-hd-crop-web.jpg)
+      
+      * Interactive interface of UNIX operating system (Linux and OSX are a
+      type of UNIX) 
+      * Access to this in the Terminal, or iTerm on OSX (since BSD-UNIX is
+      under the hood)
+      * Windows does not have a UNIX, but applications like Cygwin
+      provide this. Windows10 does have a bash shell.
+      * The Shell is the commandline program. There are several types,
+      `sh` - Bourne shell, `bash` - Bourne again shell, `csh` - C
+      shell, `zsh` - Z shell.
+      
+
+      ---
+      # Using CLI
+
+      * Programs are run from the shell to interact with the
+      filesystem, naviagate folders, read files
+      * launch programs from file editors
+      *
+
+      ---
+      # Anatomy of a command line
+
+      ```
+      /Users/me $ 
+      
+      ---
+      # Programs and scripts
+
       
       ---
       # Reminders
 
+      ![HoneyBadger](img/honeybadger.jpg)
+      
+      * Case MaTTerS
+      * File Extensions (e.g. .txt .doc .docx) don't matter
+
+            ---
+      # Directories and listing
+
+      1. ls - shows a listing of the files and folders
+      ```shell
+      $ ls
+      $ ls -l
+      ```
+      3. ls -d will display a directory name only
+      4. ls -F will give a different symbol for directories
+      5. ls -l shows long listing
+      6. ls -lt shows long listing, ordered by newest to oldest
+      
+      7. How to know all the options?
+      
+      ```bash
+      $ man ls
+      NAME
+      ls -- list directory contents
+      
+      SYNOPSIS
+      ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1] [file ...]
+
+      DESCRIPTION
+
+      For each operand that names a file of a type other than
+      directory, ls displays its name as well as any requested,
+      associated information.
+      ```
+
+      ---
+      # Directories: Creating and Deleting
+
+      1. mkdir - make directory
+      ```shell
+      $ mkdir MyDir
+      $ mkdir MyDir # will give warning
+      $ mkdir MyDir/UnderDir/DeepDir # will not work, UnderDir not created
+      $ mkdir -p MyDir/UnderDir/DeepDir # -p option will create intermediate one
+      ```
+      
+      2. rmdir - remove directory
+      ```shell
+      $ rmdir MyDir # won't let you unless it is empty
+      $ rmdir MyDir/UnderDir/DeepDir
+      ```
+
+      ---
+      # Navigating paths
+
+      1. to go into a directory use cd
+
+      2. to go back a level use 'cd ..' Can specify a total path 'cd /tmp'
+
+      3. To go back to your home dir, type cd
+
+      5. Try to make a dir, go into it, make another directory.
+      
+      4. On the Mac you can see the same directories and files
+      organized graphically too
+      
+      5. SWCarpentry has a nice intro with graphics [here](https://swcarpentry.github.io/shell-novice/01-filedir.html)
+      
+      ![Figure](img/filesystem.svg)
+      
+      ---
+      # Files
+
+      1. The whole point of all this is probably to create files with data
+      
+      2. can make an empty file with
+      ```shell
+      $ touch file # will create an empty file
+      ```
+
+      3. Running programs can generate files
+
+      4. We will discuss output later but you can direct output of a program to create a file.
+      ```shell
+      $ echo "hello world" > hello.txt
+      $ echo "goodbye cruel world" > goodbye.txt
+      ```
+      
+      ---
+      # Permissions
+
+      1. ls -l will show a long version of listing output
+      ```plain
+      jstajich@pigeon:/bigdata/gen220/shared/data_files$ ls -l
+      total 0
+      lrwxrwxrwx 1 jstajich gen220     25 Sep 25 13:53 Nc20H.expr.tab -> expression/Nc20H.expr.tab
+      -rw-rw-r-- 1 jstajich gen220 609183 Sep 25 13:52 Spellman.csv
+      drwxrwxr-x 2 jstajich gen220 4096 Jun 10 00:39 expression
+      drwxr-xr-x 6 jstajich gen220 4096 Jun 10 00:39 sequences
+      ```
+      2. There is info on the file/folder and 3 sets of permissions listed there
+          * 'd' -> It is a directory, 'l' -> it is a link, empty, it is a file
+          * User -> rwx or rw-  permissions for the user
+          * Group
+          * All
+
+      3. what are permissions
+          * r - is it readable
+          * w - is it writeable
+          * x - is it executable
+
+      4. Directories have to be executable to be able to be used/entered. Programs/applications need to be executable to be able to run.
+      
+      ---
+      # Deleting things (careful!)
+
+      1. rm - for removing files
+      2. rm -r -- _be careful_ removes recursively
+      3. rm -f - removes without prompting you
+      4. rm -rf - removes recurisvely without prompty __Use with care__
+
+      ---
+      # File content
+
+      Want to read the content of a text file you can use these
+      commands 
+      1. cat - will spit out the whole file on the screen
+      2. more - a paginator - will display one page at a time (based
+      on your screen)
+      3. less - similar to more, but has additional options
+
+      ---
+      # Editors
+
+      1. pico or nano
+      * Will be one of the easiest to try out on the command line
+      * Follow commands at bottom of screen to figure out how it works
+
+      2. emacs, vi
+
+      3. TextEdit, TextMate on OSX
+
+      4. Syntax highlighting useful when doing programming. We will do
+      more on this later.
+      
+      ---
+      # Other resources
+      1. [Introduction to UNIX Shell - Software Carpentry](http://swcarpentry.github.io/shell-novice/)
       
     </textarea>
-    <script src="js/remark.js" type="text/javascript">
+    <script src="js/remark.min.js" type="text/javascript">
     </script>
     <script type="text/javascript">
       var slideshow = remark.create();
