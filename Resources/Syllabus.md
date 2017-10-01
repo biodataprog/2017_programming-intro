@@ -118,8 +118,8 @@ Schedule
 | Nov-17	|	F	|	Bioinformatics 3 - Genome Assembly	|	
 | Nov-22	|	W	|	*TBD - No Class?*	|	
 | *Nov-24*	|	*F*	|	*Thanksgiving Holiday - no class* |	
-| Nov-29	|	W	|	Bioinformatics 5 - SNP and variant discovery	|	
-| Dec-1	|	F	|	Bioinformatics 6 - Phylogenetic trees	|	
+| Nov-29	|	W	|	Bioinformatics 4 - SNP and variant discovery	|	
+| Dec-1	|	F	|	Bioinformatics 5 - Phylogenetic trees	|	
 | Dec-6	|	W	|	TBD	|	Guest Lecture
 | Dec-8	|	F	|	Presentations	|	
 | Exam week	|	TBD	|	Additional presentations TBD
