@@ -104,22 +104,22 @@ Schedule
 | Sep-29	|	F	|	Course Outline / UNIX I: Introduction	|	|
 | Oct-4	|	W	|	UNIX II: Running programs, capturing output	|	
 | Oct-6	|	F	|	UNIX III: Tools for data processing	|	
-| Oct-11	|	W	|	Logging into Biocluster. Running Jobs	|	Guest Lecture
+| Oct-11	|	W	|	Logging into Biocluster. Running Jobs	| Guest Lecture: Charles Forsyth Lecturer
 | Oct-13	|	F	|	Python 1 - Variables, running, cmdline, strings, math	|	
-| Oct-18	|	W	|	Python 2 - Logic, loops, lists, iterator	|	Guest Lecture
+| Oct-18	|	W	|	Python 2 - Logic, loops, lists, iterator	|	Guest Lecture: TBD
 | Oct-20	|	F	|	Python 3 - I/O reading/writing files, directories	|	
 | Oct-25	|	W	|	Python 4 - Dictionaries, Arrays, functions	|	
 | Oct-27	|	F	|	Python 5 - Libraries, packages, BioPython	|	
 | Nov-1	|	W	|	Python 6 - Structured data (CSV, XML, GFF, BED)	|	
 | Nov-3	|	F	|	Data Plotting and R graphics	|	
 | Nov-8	|	W	|	Bioinformatics 1 - BLAST, cmdline & automation	|	
-| Nov-10	|	F	|	Veteran's Day Holiday: No class	|	
+| Nov-10	|	*F*	|	*Veteran's Day Holiday: No class*	|	
 | Nov-15	|	W	|	Bioinformatics 2 - short reads, alignment, stats, SNPs	|	
 | Nov-17	|	F	|	Bioinformatics 3 - Genome Assembly	|	
-| Nov-22	|	W	|	*TBD - No Class?*	|	
-| *Nov-24*	|	*F*	|	*Thanksgiving Holiday - no class* |	
-| Nov-29	|	W	|	Bioinformatics 4 - SNP and variant discovery	|	
-| Dec-1	|	F	|	Bioinformatics 5 - Phylogenetic trees	|	
-| Dec-6	|	W	|	TBD	|	Guest Lecture
+| Nov-22	|	*W*	|	*Project Workshop / No class? *	|	
+| *Nov-24*	|	*F*	|	*Thanksgiving Holiday - No class* |	
+| Nov-29	|	W	| Bioinformatics 4 - Orthologs and Domain finding	|	
+| Dec-1	|	F	| Bioinformatics 5  - Phylogenetics |
+Dec-6	|	W	| Bioinformatics 6 - SNP and variant discovery	| Guest Lecture: Daniel Koening |
 | Dec-8	|	F	|	Presentations	|	
 | Exam week	|	TBD	|	Additional presentations TBD
