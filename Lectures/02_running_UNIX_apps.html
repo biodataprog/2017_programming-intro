@@ -37,15 +37,32 @@
       
       ---
       #cmdline options
-
-      * ^E, ^A
-
+      * ^ means "Control key"
+      * end a session: ^D (End of File message)
+      * cancel a running application: ^C
+      * Tab to try to autocomplete (applications, filenames, directories)
+      * while typing on cmdline - jump to end of line: ^E
+      * get back to the beginning of line: ^A
+      
       ---
       #Foreground, Background
 
-      Jobs run in the foreground by default
+      Jobs are run in the foreground by default
+
+      * ^Z - suspend job
+      * `bg` - puts process in background
+      * type `fg` - puts process back in foreground
+      * `cmd &amp;` launches puts process in background  
 
       ```shell
+      $ emacs
+      ^Z
+      [1]+  Stopped                 emacs
+      $ bg # job in backgroun
+      [1]+ emacs &
+      $ fg
+      emacs
+      ```
       
       ---
       # Copy files
