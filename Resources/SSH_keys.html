@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>Some help on SSH keys</p>
+<p><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generating SSH keys</a></p>
+<pre class="shell"><code>$ ssh-keygen -t rsa -b 4096 -C &quot;youremail&quot;
+# you will be prompted for a password - this is not your login password but a new password
+# you can use for unlocking your keypair</code></pre>
+<h1 id="setting-up-ssh-keys-for-passwordless-login">Setting up ssh keys for passwordless login</h1>
+<ol type="1">
+<li>generate ssh key pair on your laptop</li>
+<li><p>Copy ~/.ssh/id_rsa.pub YOURNAME@biocluster.ucr.edu</p>
+<pre class="shell"><code>$ scp  ~/.ssh/id_rsa.pub biocluster.ucr.edu:.ssh/mylaptopkey.pub
+$ ssh YOURNAME@biocluster.ucr.edu
+[biocluster] $ cd .ssh
+[biocluster] $ cat mylaptopkey.pub &gt;&gt; authorized_keys2
+[biocluster] $ chmod 644 authorized_keys2
+[biocluster] $ logout
+$ ssh YOURNAME@biocluster.ucr.edu</code></pre></li>
+</ol>
+<h1 id="using-public-ssh-keys">Using Public SSH keys</h1>
+<p>The public SSH keys from your laptop and one on biocluster can be uploaded to github for easier checkin / checkout authentication via SSH instead of HTTPS</p>
+</body>
+</html>
