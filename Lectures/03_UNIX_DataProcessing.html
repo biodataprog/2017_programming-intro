@@ -40,7 +40,9 @@
       in any serious capacity).
 
       [Chapter 7: Insecting and Manipulating Text Data with Unix Tools](https://www.safaribooksonline.com/library/view/bioinformatics-data-skills/9781449367480/ch07.html#chapter-07)
-      
+
+      The data files in this lecture are in [data](data) and also in
+      the [https://github.com/biodataprog/programming-intro/tree/master/data](github repo).
       ---
       # Sorting with sort
 
@@ -182,9 +184,7 @@
       ```
       ---
       # Column processing with cut
-
       __`cut`__ - subselect and print certain columns from a file
-
       ```text
       YAR060C Chr_I 100.00 336 0   0	336    1   217148	217483	8.6e-83	298.8
       YAR060C Chr_I 64.00  325 95 22	330   14   198385	198695	4.1e-18	84.0
@@ -246,6 +246,7 @@
       YAL002W	100.00
       YAL003W	100.00
       YAL003W	100.00
+      
       $ sort -k9,1n data/yeast_orfs-to-chr1.FASTA.tab |  head -n 5
       YAL069W	100.00	335	649
       YAL068W-A	100.00	538	792
@@ -265,7 +266,7 @@
       tL(CAA)A        100.00  38      tL(CAA)A        1
       YAL028W 100.00  1587    YAL028W 1
       YAL029C 100.00  4416    YAL029C 4416
-
+      ```
       ---
       # Simple column filtering with awk
 
@@ -293,6 +294,7 @@
       Chr5 27781790 27781888 98
       Chr11 14656670 14656778 108
       Chr3 14560358 14560608 250
+      
       # restrict to features larger than 100 bp
       $  awk -F, '$3 - $2 > 100 {print $1,$2,$3,$3 - $2}' data/random_exons.csv | \
       sort -k4,1nr | head -n 3
