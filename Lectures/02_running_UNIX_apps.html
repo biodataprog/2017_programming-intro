@@ -234,20 +234,20 @@
       ```shell
       $ ping www.ucr.edu  # will keep running till you hit Control-C
       64 bytes from 138.23.226.208: icmp_seq=3 ttl=241 time=33.058 ms
-      64 bytes from 138.23.226.208: icmp_seq=4 ttl=241 time=34.757 ms
       # but instead, type Control-Z
       [2]+  Stopped                 ping www.ucr.edu
       # now put it into the background
       $ bg
       64 bytes from 138.23.226.208: icmp_seq=22 ttl=241 time=44.175 ms
-      64 bytes from 138.23.226.208: icmp_seq=23 ttl=241 time=41.319 ms
       # it will continue to run now in the background
       # bring it back to the foreground with 'fg'
       $ fg # still running
       64 bytes from 138.23.226.208: icmp_seq=5 ttl=241 time=32.900 ms
-      64 bytes from 138.23.226.208: icmp_seq=6 ttl=241 time=33.840 ms      
       # now cancel it with Control-C
       ```
+      ---
+      # Process control (cont.)
+      
       If you have more than one process in the background, __`fg`__
       will bring up the most recent one. You can switch to a
       particular one using the name
@@ -355,9 +355,8 @@
       ---
       # Compression
 
-      File compression is important for saving space on disks. Also
-      for transferring data between hosts, compressed files will take
-      less time to transfer
+      File compression can save disk space, reduce file transfer time
+      when copying between computers
 
       1. __`gzip`__ for GNUzip compression. Single file at a time.
          (biocluster) pigz is parallelized and can use multiple
@@ -378,8 +377,8 @@
       204K	data/Nc20H.expr.tab.bz2
       $ bunzip2 data/Nc20H.expr.tab.bz2
       ```
-      3. zcat, zmore and bzcat, bzmore to read files on the fly
-      (without uncompressing entire file at once)
+      3. __`zcat`__, __`zmore`__ and __`bzcat`__, __`bzmore`__ to read
+         compressed files on the fly
 
       ---
       # File / disk usage with __du__
@@ -411,9 +410,6 @@
 
        -a, --all
               do not ignore entries starting with .
-
-       -A, --almost-all
-              do not list implied . and ..
 
        --author
               with -l, print the author of each file
@@ -518,7 +514,7 @@
       $ zcat data/blast.out.gz | awk '{print $1}' | sort | uniq | wc -l
       # take output from blast program, compress it on the fly to a
       new file
-      $ blastn -query query.fa -db db.fa -outfmt 6 | gzip -c > blastresult.out.gz
+      $ blastn -query query.fa -db db.fa -outfmt 6 | gzip -c > blastresult.gz
       ```
 
       ---
