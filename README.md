@@ -1,5 +1,5 @@
 # Intro Programming for Biological data analyses 
-Computational Analysis of High Throughput Biological Data
+[Computational Analysis of High Throughput Biological Data](https://biodataprog.github.io/programming-intro/index.html)
 
 This course focuses on an introduction to programming for biological
 data analysis. The programming language will be Python with a large
