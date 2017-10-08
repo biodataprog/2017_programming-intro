@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="homework-1">Homework 1</h1>
+<p>Create a hw1 repository on github and make it within the biodataprog organization</p>
+<p>Write a bash / shell script to accomplish the following tasks. Remeber you can make a shell script as a series of commands just as you would type on the command line.</p>
+<ol type="1">
+<li><p><strong>Getting data</strong></p>
+<ul>
+<li>Use a cmdline downloading program (e.g. curl) to download this BLAST report from the web: <a href="https://biodataprog.github.io/programming-intro/data/Ecoli-vs-Yersinia.BLASTP.tab.gz">Ecoli-vs-Yersinia.BLASTP.tab.gz</a></li>
+<li>Print out how big this file is (in kilobytes)?</li>
+</ul></li>
+<li><p><strong>Compressing and uncompressing</strong></p>
+<ul>
+<li>Uncmpress this file with gunzip.</li>
+<li>How big is the uncompressed file (in kilobases)?</li>
+</ul></li>
+<li><p><strong>Counting and viewing</strong> (Using this BLAST report)</p>
+<ul>
+<li>Print out the first 25 lines of the file</li>
+<li>Print out the last 3 lines of the file</li>
+<li>Print the total number lines in the file</li>
+</ul></li>
+<li><p><strong>Sorting</strong></p>
+<ul>
+<li>Obtain the data file <a href="https://biodataprog.github.io/programming-intro/data/Nc3H.expr.tab">Nc3H.expr.tab</a>. This file contains gene expression value assigned to each gene in the <em>Neurospora crassa</em> (a fungus) genome.</li>
+<li>Sort the file based on the FPKM column (which is the gene expression) (write out to a new file called Nc20H.expr.sorted.tab). Remember the in-class introduction to sorting which ignores the header. Note your sorting will be more complicated than what is depicted here. <code>shell  (head -n 1 &lt;filemame&gt; &amp;&amp; tail -n +2 &lt;filemame&gt; | sort) &gt; newfile</code></li>
+<li>Print out a list of the top 10 most highly expressed genes based on FPKM.</li>
+</ul></li>
+<li><p><strong>Finding and Counting</strong></p>
+<ul>
+<li>Report the number of CDS features in this <a href="https://biodataprog.github.io/programming-intro/data/D_mel.63B12.gbk">genbank file</a> - see for example <a href="http://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">this explanation</a> of a genbank file if you are not familiar.</li>
+<li>Print how many sequence alignments are 100% identical in the previously downloaded file <code>Ecoli-vs-Yersinia.BLASTP.tab</code>.</li>
+<li>Print how many sequence alignments are 90% identical or better in the previously downloaded file <code>Ecoli-vs-Yersinia.BLASTP.tab</code>. (Hint, review the options in awk for filtering or processing column delimited data).</li>
+</ul></li>
+<li><p><strong>Sort and Uniq</strong></p>
+<ul>
+<li>Obtain the file listing the standard codons and amino acids translations. <a href="https://biodataprog.github.io/programming-intro/data/codon_table.txt">codon_table.txt</a>. Column 1 is the codon, Column 2 is the amino acid, and Column 3 is the Amino acid written out.</li>
+<li>Print out the name or symbol of each amino acid and how many codons encode that amino acid. (e.g. Lysine/K is encoded by 2 codons)</li>
+</ul></li>
+</ol>
+</body>
+</html>
