@@ -320,16 +320,16 @@
       >>> q =
       "Symbol:NASDAQ=AAPL;Date:2015-10-01;Performance:Open=111.29,Close=109.56"
       >>> types = q.split(";")
-      >>> print types
+      >>> print(types)
       ['Symbol:NASDAQ=AAPL', 'Date:2015-10-01',
       'Performance:Open=111.29,Close=109.56']
       >>> symbolset = types[0].split(":")
-      >>> print symbolset
+      >>> print(symbolset)
       ['Symbol', 'NASDAQ=AAPL']      
       >>> symbol = symbolset[1].split("=")
       >>> symbol
       ['NASDAQ', 'AAPL']
-      >>> print symbol[1]
+      >>> print(symbol[1])
       'AAPL'
       >>> print(symbolset[1].split("=")[1])
       'AAPL'
@@ -357,10 +357,10 @@
       ```python
       # use repr to print out literally the string
       >>> hello = 'hello world\n'
-      >>> print hello
+      >>> print(hello)
       hello world
 
-      >>> print repr(hello)
+      >>> print(repr(hello))
       'hello world\n'
       ```
       ---
