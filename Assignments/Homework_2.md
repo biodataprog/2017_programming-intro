@@ -42,7 +42,7 @@ written in the script `codon_table_count.py`
 
 The report can look something like:
 
-```
+: ```
 Amino acid X is encoded by Y codons
 ...
 ...
