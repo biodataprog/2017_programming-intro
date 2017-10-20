@@ -10,7 +10,7 @@ and use '.txt'.
 5. Upload files to the repository online.
 6. Checkout the code.
 ```shell
-$ git checkout https://github.com/YOURID/mytestrepo.git
+$ git clone https://github.com/YOURID/mytestrepo.git
 ```
 7. Edit / Update a file
 ```shell
