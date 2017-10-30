@@ -82,7 +82,7 @@
       re.search('[123] bird', '1 bird')  # true
       re.search('[0-3] bird', '4 birds') # false
 
-      re.search('\d bird', '4 Birds') # true
+      re.search('\d bird', '4 Birds') # false
       re.search('\d [Bb]ird', '4 Birds') # true
       ```
      
