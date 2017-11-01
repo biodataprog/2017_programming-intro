@@ -1,4 +1,7 @@
+Git Tutorial
+===========
 1. Create account on github.com - see [https://help.github.com/](https://help.github.com/)
+    * Also see http://proquest.safaribooksonline.com/9781449367480/ch05_shared_central_github_html
 2. Login
 3. Create new repository 'mytestrepo' or click on homework link to automatically create your homework repository for the specific assignment
 4. Add a README.md file. This ends in 'md' because we usually write

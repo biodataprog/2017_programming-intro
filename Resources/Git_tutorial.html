@@ -1,42 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Git_tutorial</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      .smallcaps{font-variant: small-caps;}
+      .line-block{white-space: pre-line;}
+      .column{display: inline-block;}
+  </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
+<h1 id="git-tutorial">Git Tutorial</h1>
 <ol type="1">
-<li>Create account on github.com - see <a href="https://help.github.com/" class="uri">https://help.github.com/</a></li>
-<li>Login</li>
-<li>Create new repository 'mytestrepo' or click on homework link to automatically create your homework repository for the specific assignment</li>
-<li>Add a README.md file. This ends in 'md' because we usually write these in <a href="https://guides.github.com/features/mastering-markdown/">markdown</a> which is a structured text format that can be rendered in nice ways in HTML and PDF (like this guide). You can also make it a plain text file and use '.txt'.</li>
-<li>Upload files to the repository online.</li>
-<li><p>Checkout the code.</p>
-<pre class="shell"><code>$ git clone https://github.com/YOURID/mytestrepo.git</code></pre></li>
-<li><p>Edit / Update a file</p>
-<pre class="shell"><code>$ nano solution.sh
-# or some other tool (e.g. emacs, textedit, vi, ...)</code></pre></li>
-<li><p>Commit these changes to your LOCAL repository</p>
-<pre class="shell"><code>$ git commit -m &quot;I updated the solution&quot;</code></pre></li>
-<li><p>Save this changed repository in the github server. (eg 'the cloud'). This lets others see the file changes and sync their repository with yours if you are doing a collaborative project or for the instructor to see your submitted solutions. Also saves a copy, you or others can then checkout a clone of this repository on other computers or even just different folders if you need to</p>
-<pre class="shell"><code>$ git push
-# git push will request your github ID and github password</code></pre></li>
-</ol>
+<li>Create account on github.com - see <a href="https://help.github.com/" class="uri">https://help.github.com/</a>
 <ul>
-<li>See <a href="SSH_keys.html">SSH_keys</a> info about how to make SSH keys and <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Github info on adding SSH keys</a> to your account so you don't have to enter password each time.</li>
+<li>Also see http://proquest.safaribooksonline.com/9781449367480/ch05_shared_central_github_html</li>
+</ul></li>
+<li>Login</li>
+<li>Create new repository ‘mytestrepo’ or click on homework link to automatically create your homework repository for the specific assignment</li>
+<li>Add a README.md file. This ends in ‘md’ because we usually write these in <a href="https://guides.github.com/features/mastering-markdown/">markdown</a> which is a structured text format that can be rendered in nice ways in HTML and PDF (like this guide). You can also make it a plain text file and use ‘.txt’.</li>
+<li>Upload files to the repository online.</li>
+<li>Checkout the code.</li>
+</ol>
+<pre class="shell"><code>$ git clone https://github.com/YOURID/mytestrepo.git</code></pre>
+<ol start="7" type="1">
+<li>Edit / Update a file</li>
+</ol>
+<pre class="shell"><code>$ nano solution.sh
+# or some other tool (e.g. emacs, textedit, vi, ...)</code></pre>
+<ol start="8" type="1">
+<li>Commit these changes to your LOCAL repository</li>
+</ol>
+<pre class="shell"><code>$ git commit -m &quot;I updated the solution&quot;</code></pre>
+<ol start="9" type="1">
+<li>Save this changed repository in the github server. (eg ‘the cloud’). This lets others see the file changes and sync their repository with yours if you are doing a collaborative project or for the instructor to see your submitted solutions. Also saves a copy, you or others can then checkout a clone of this repository on other computers or even just different folders if you need to</li>
+</ol>
+<pre class="shell"><code>$ git push
+# git push will request your github ID and github password</code></pre>
+<ul>
+<li>See <a href="SSH_keys.html">SSH_keys</a> info about how to make SSH keys and <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Github info on adding SSH keys</a> to your account so you don’t have to enter password each time.</li>
 </ul>
 <ol start="10" type="1">
-<li><p>Add another new file (e.g. another script)</p>
+<li>Add another new file (e.g. another script)</li>
+</ol>
 <pre class="shell"><code>$ nano newfile.py
 $ git add newfile.py
 $ git commit -m &quot;I added this new file&quot; newfile.py
-$ git push</code></pre></li>
-</ol>
+$ git push</code></pre>
 </body>
 </html>
