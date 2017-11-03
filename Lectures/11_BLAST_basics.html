@@ -198,7 +198,7 @@
         makeblastdb -in C_glabrata_orfs.fa -dbtype nucl
       fi
       blastn -query yeast_chr1_orfs.fa -db C_glabrata_orfs.fa \
-      -evalue 1e-5 -outfmt 6 -out yeastORF-vs-CglabrataORF.BLASTN.tab -a $CPUS      
+      -evalue 1e-5 -outfmt 6 -out yeastORF-vs-CglabrataORF.BLASTN.tab -num_threads $CPUS      
       ```
       Now submit this script
       ```bash
