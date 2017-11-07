@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Homework_1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      .smallcaps{font-variant: small-caps;}
+      .line-block{white-space: pre-line;}
+      .column{display: inline-block;}
+  </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -17,7 +22,7 @@
 <ol type="1">
 <li><p><strong>Getting data</strong></p>
 <ul>
-<li>Use a cmdline downloading program (e.g. curl) to download this BLAST report from the web: <a href="https://biodataprog.github.io/programming-intro/data/Ecoli-vs-Yersinia.BLASTP.tab.gz">Ecoli-vs-Yersinia.BLASTP.tab.gz</a></li>
+<li>Use a cmdline downloading program (e.g. curl) to download this BLAST report from the web: <a href="https://biodataprog.github.io/programming-intro/data/Ecoli-vs-Yersinia.BLASTP.tab.gz">Ecoli-vs-Yersinia.BLASTP.tab.gz</a></li>
 <li>Print out how big this file is (in kilobytes)?</li>
 </ul></li>
 <li><p><strong>Compressing and uncompressing</strong></p>
@@ -34,7 +39,7 @@
 <li><p><strong>Sorting</strong></p>
 <ul>
 <li>Obtain the data file <a href="https://biodataprog.github.io/programming-intro/data/Nc3H.expr.tab">Nc3H.expr.tab</a>. This file contains gene expression value assigned to each gene in the <em>Neurospora crassa</em> (a fungus) genome.</li>
-<li>Sort the file based on the FPKM column (which is the gene expression) (write out to a new file called Nc20H.expr.sorted.tab). Remember the in-class introduction to sorting which ignores the header. Note your sorting will be more complicated than what is depicted here. <code>shell  (head -n 1 &lt;filemame&gt; &amp;&amp; tail -n +2 &lt;filemame&gt; | sort) &gt; newfile</code></li>
+<li>Sort the file based on the FPKM column (which is the gene expression) (write out to a new file called Nc20H.expr.sorted.tab). Remember the in-class introduction to sorting which ignores the header. Note your sorting will be more complicated than what is depicted here. <code>shell   (head -n 1 &lt;filename&gt; &amp;&amp; tail -n +2 &lt;filename&gt; | sort) &gt; newfile</code></li>
 <li>Print out a list of the top 10 most highly expressed genes based on FPKM.</li>
 </ul></li>
 <li><p><strong>Finding and Counting</strong></p>
@@ -46,7 +51,7 @@
 <li><p><strong>Sort and Uniq</strong></p>
 <ul>
 <li>Obtain the file listing the standard codons and amino acids translations. <a href="https://biodataprog.github.io/programming-intro/data/codon_table.txt">codon_table.txt</a>. Column 1 is the codon, Column 2 is the amino acid, and Column 3 is the Amino acid written out.</li>
-<li>Print out the name or symbol of each amino acid and how many codons encode that amino acid. (e.g. Lysine/K is encoded by 2 codons)</li>
+<li>Print out the name or symbol of each amino acid and how many codons encode that amino acid. (e.g. Lysine/K is encoded by 2 codons)</li>
 </ul></li>
 </ol>
 </body>

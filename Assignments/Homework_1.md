@@ -37,7 +37,7 @@ as a series of commands just as you would type on the command line.
     Remember the in-class introduction to sorting which ignores the header. Note your sorting will be more complicated than
     what is depicted here.
      ```shell
-     (head -n 1 <filemame> && tail -n +2 <filemame> | sort) > newfile
+     (head -n 1 <filename> && tail -n +2 <filename> | sort) > newfile
      ```
     + Print out a list of the top 10 most highly expressed genes based on FPKM.
 
