@@ -34,11 +34,11 @@ as a series of commands just as you would type on the command line.
     + Sort the file based on the FPKM column (which is the gene
     expression) (write out to a new file called
     Nc20H.expr.sorted.tab).
-    Remember the in-class introduction to sorting which ignores the header. Note your sorting will be more complicated than
-    what is depicted here.
-     ```shell
+    Remember the in-class introduction to sorting which ignores the header. Note your sorting will be more 
+    complicated than what is depicted here.
+    ```shell
      (head -n 1 <filename> && tail -n +2 <filename> | sort) > newfile
-     ```
+    ```
     + Print out a list of the top 10 most highly expressed genes based on FPKM.
 
 
