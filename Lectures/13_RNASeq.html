@@ -95,6 +95,7 @@
 
       ```bash
       $ module load trinity-rnaseq
+      $ module switch perl/5.22.0
       $ Trinity --seqType fq --left reads_1.fq --right reads_2.fq --CPU 8 --max_memory 20G
       ```
 
@@ -127,8 +128,8 @@
       ---
       # RNAseq read mapping
       ```bash
-      $ hisat2  -x genome/yeast -1  -2 fastq/yeast_RNASeq_1.fq fastq/yeast_RNASeq_2.fq \
-        --no-mixed --no-discordant -S RNASeq_aln.sam  -p 16
+      $ hisat2  -x genome/yeast -1 fastq/yeast_RNASeq_1.fq -2 fastq/yeast_RNASeq_2.fq \
+        -S RNASeq_aln.sam  -p 16
       $ module load samtools
       $ samtools view -b RNASeq_aln.sam > RNASeq_aln.bam
       $ samtools sort RNASeq_aln.bam > RNASeq_aln.sort.bam
