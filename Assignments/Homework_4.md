@@ -16,7 +16,7 @@ See this paper:
 * Thompson et al. PLoS One 2016; 11(10): e0165375 doi: [10.1371/journal.pone.0165375](http://dx.doi.org/10.1371/journal.pone.0165375)
 
 * Here is a view of the sequencing data. All data are on cluster in this folder
-`/bigdata/gen220/shared/projects/HW4/hw4_hyphaltip`
+`/bigdata/gen220/shared/projects/HW4/hw4_template`
 
 Also you can get it from the web directly yourself.
 [https://www.ebi.ac.uk/ena/data/view/PRJNA315575](https://www.ebi.ac.uk/ena/data/view/PRJNA315575)
