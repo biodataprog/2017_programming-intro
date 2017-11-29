@@ -45,7 +45,7 @@ And the [GFF](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/011/465/GCF_0000114
 
 * Use Hisat2, samtools, and stringtie to generate a table of expression for these two experiments
 * Write a python script that will generate a report with 5 columns of data.
-Gene Name, Gene Location, Gene Length, FPKM exp1, FPKM exp 2
+Gene Name, Chromosome, Start, End, Strand, Gene Length, FPKM exp1, FPKM exp 2
 * Using R or other tools, make these plots
     * Plot gene expression from exp1 vs gene expression of exp 2
     * Plot gene length vs expr1 expression (FPKM). Is there a relationship?
